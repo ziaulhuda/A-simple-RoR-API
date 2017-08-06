@@ -15,6 +15,8 @@ resource "Authorization" do
       end
       
       response_field :auth_token, "Authorization token to be sent in request headers for using other API actions", "Type" => "String"
+      response_field :name, "Name of the user", "Type" => "String"
+      response_field :role, "Role of the user. One of [admin, user, guest]", "Type" => "String"
       
       let(:password) { "12345678" }
       let(:email) { user.email }

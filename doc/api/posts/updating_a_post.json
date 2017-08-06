@@ -28,7 +28,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "9pUCLS51DjFUye9VXvWDnDxB",
+        "Authorization": "eFSpUjDgZzrzvrevMZjuin5t",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -40,11 +40,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "4cd47da4-9ffd-47d6-a0f6-7d1cda246f77",
-        "X-Runtime": "0.005104"
+        "X-Request-Id": "d810aa38-9e0f-4442-93eb-a114746dff4b",
+        "X-Runtime": "0.010172"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/posts/4\" -d '{\"title\":\"A wonderful post\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: 9pUCLS51DjFUye9VXvWDnDxB\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/4\" -d '{\"title\":\"A wonderful post\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eFSpUjDgZzrzvrevMZjuin5t\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

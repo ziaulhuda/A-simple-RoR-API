@@ -6,6 +6,6 @@ include AcceptanceSpecHelper
 RspecApiDocumentation.configure do |config|
   config.format = [:json, :combined_text, :html]
   config.curl_host = 'http://localhost:3000'
-  config.api_name = "ClarkCS API"
+  config.api_name = "A simple RoR API"
   
 end

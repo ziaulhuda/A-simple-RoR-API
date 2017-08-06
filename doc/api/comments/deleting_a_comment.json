@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "ZHTQeT6sB3Voxw6F4v2xzzKQ",
+        "Authorization": "Pu1L6oEp1BkZwsdfcNbJDbVj",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -31,11 +31,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "401a0ee5-17d6-4407-ac0e-b7916d7fae11",
-        "X-Runtime": "0.005600"
+        "X-Request-Id": "21988bb5-5117-4f5e-a9c0-374488df9e9d",
+        "X-Runtime": "0.010051"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/posts/1/comments/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: ZHTQeT6sB3Voxw6F4v2xzzKQ\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/1/comments/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: Pu1L6oEp1BkZwsdfcNbJDbVj\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

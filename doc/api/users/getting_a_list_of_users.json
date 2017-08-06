@@ -43,7 +43,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "TSJpN5h32JiPHu1KNUHNAgwx",
+        "Authorization": "SscEZvh1eutJhohuRiAQY8Fu",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -52,17 +52,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"[\\\"et\\\", \\\"qui\\\"]\",\n    \"email\": \"albert.wolff@windler.info\",\n    \"role\": \"admin\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 2,\n    \"name\": \"[\\\"recusandae\\\", \\\"quia\\\"]\",\n    \"email\": \"tyrel@wardziemann.name\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"[\\\"rerum\\\", \\\"sed\\\"]\",\n    \"email\": \"izaiah_hickle@moen.net\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 4,\n    \"name\": \"[\\\"quam\\\", \\\"fugit\\\"]\",\n    \"email\": \"clementina_weinat@rau.biz\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 5,\n    \"name\": \"[\\\"dolorem\\\", \\\"maiores\\\"]\",\n    \"email\": \"lonzo@kuvalis.info\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"[\\\"a\\\", \\\"qui\\\"]\",\n    \"email\": \"concepcion.kautzer@strosin.biz\",\n    \"role\": \"admin\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 2,\n    \"name\": \"[\\\"error\\\", \\\"illum\\\"]\",\n    \"email\": \"jordi_marks@connelly.com\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"[\\\"cumque\\\", \\\"harum\\\"]\",\n    \"email\": \"rahsaan.kilback@rippin.net\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 4,\n    \"name\": \"[\\\"fugiat\\\", \\\"omnis\\\"]\",\n    \"email\": \"green@rohan.co\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 5,\n    \"name\": \"[\\\"quod\\\", \\\"minima\\\"]\",\n    \"email\": \"shania@heathcote.biz\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e30adb2160e8facd5ae533da3cc0bd54\"",
+        "ETag": "W/\"9247b2d4a9cffd304fcb4df22d7837b8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "cc7b6cc4-83b5-441c-8429-a60ecea92bec",
-        "X-Runtime": "0.005863",
-        "Content-Length": "533"
+        "X-Request-Id": "c2facc93-b4e3-4041-8612-eb922fa05b19",
+        "X-Runtime": "0.027162",
+        "Content-Length": "531"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: TSJpN5h32JiPHu1KNUHNAgwx\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: SscEZvh1eutJhohuRiAQY8Fu\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

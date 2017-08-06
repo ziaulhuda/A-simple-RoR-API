@@ -65,7 +65,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "FtybRnJGxB22HikoUhM8m3DA",
+        "Authorization": "Rf1cHJVuwmdRLdBm9kHaLwBd",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -74,17 +74,17 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 6,\n  \"name\": \"Martin Craigs\",\n  \"email\": \"email@example.com\",\n  \"role\": \"guest\",\n  \"password_digest\": \"$2a$04$IsVputzM5kxq10yI4IIw..q7VWntNAspTLpsyvot1bVdqABWv3muK\",\n  \"auth_token\": \"UE2ee69aJzB36gZDiVgjBKyd\",\n  \"disabled\": false,\n  \"created_at\": \"2017-08-06T00:09:14.068Z\",\n  \"updated_at\": \"2017-08-06T00:09:14.068Z\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"name\": \"Martin Craigs\",\n  \"email\": \"email@example.com\",\n  \"role\": \"guest\",\n  \"password_digest\": \"$2a$04$sXV3vMVWe/COrKDx4WrnkOn.Ow2FxaW8KitO3AZJYUWXT81rltNvu\",\n  \"auth_token\": \"ydJ5Mp2sm1dSbJqBk4vaNjcG\",\n  \"disabled\": false,\n  \"created_at\": \"2017-08-06T15:22:57.625Z\",\n  \"updated_at\": \"2017-08-06T15:22:57.625Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b4ef85c2c66965f374f85bd57dd8852b\"",
+        "ETag": "W/\"22ff986f7b11ac9e2d1b62843369da53\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "659f5fda-dd4f-4c3e-8008-458d71708485",
-        "X-Runtime": "0.011386",
+        "X-Request-Id": "517dc938-fa25-4cba-8adc-317ec7fae402",
+        "X-Runtime": "0.016930",
         "Content-Length": "292"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/users\" -d '{\"name\":\"Martin Craigs\",\"email\":\"email@example.com\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: FtybRnJGxB22HikoUhM8m3DA\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/users\" -d '{\"name\":\"Martin Craigs\",\"email\":\"email@example.com\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: Rf1cHJVuwmdRLdBm9kHaLwBd\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

@@ -4,7 +4,7 @@ Getting a list of users
 Request:
   GET /users
   Accept: application/json
-  Authorization: TSJpN5h32JiPHu1KNUHNAgwx
+  Authorization: SscEZvh1eutJhohuRiAQY8Fu
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -12,45 +12,45 @@ Request:
 Response:
   Status: 200 OK
   Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 533
+  Content-Length: 531
   Content-Type: application/json; charset=utf-8
-  ETag: W/"e30adb2160e8facd5ae533da3cc0bd54"
-  X-Request-Id: cc7b6cc4-83b5-441c-8429-a60ecea92bec
-  X-Runtime: 0.005863
+  ETag: W/"9247b2d4a9cffd304fcb4df22d7837b8"
+  X-Request-Id: c2facc93-b4e3-4041-8612-eb922fa05b19
+  X-Runtime: 0.027162
 
   [
     {
       "id": 1,
-      "name": "[\"et\", \"qui\"]",
-      "email": "albert.wolff@windler.info",
+      "name": "[\"a\", \"qui\"]",
+      "email": "concepcion.kautzer@strosin.biz",
       "role": "admin",
       "disabled": false
     },
     {
       "id": 2,
-      "name": "[\"recusandae\", \"quia\"]",
-      "email": "tyrel@wardziemann.name",
+      "name": "[\"error\", \"illum\"]",
+      "email": "jordi_marks@connelly.com",
       "role": "guest",
       "disabled": false
     },
     {
       "id": 3,
-      "name": "[\"rerum\", \"sed\"]",
-      "email": "izaiah_hickle@moen.net",
+      "name": "[\"cumque\", \"harum\"]",
+      "email": "rahsaan.kilback@rippin.net",
       "role": "guest",
       "disabled": false
     },
     {
       "id": 4,
-      "name": "[\"quam\", \"fugit\"]",
-      "email": "clementina_weinat@rau.biz",
+      "name": "[\"fugiat\", \"omnis\"]",
+      "email": "green@rohan.co",
       "role": "guest",
       "disabled": false
     },
     {
       "id": 5,
-      "name": "[\"dolorem\", \"maiores\"]",
-      "email": "lonzo@kuvalis.info",
+      "name": "[\"quod\", \"minima\"]",
+      "email": "shania@heathcote.biz",
       "role": "guest",
       "disabled": false
     }
@@ -63,7 +63,7 @@ Getting a specific user
 Request:
   GET /users/5
   Accept: application/json
-  Authorization: TD3hRyQLTCJqFpy1D7ttSgDm
+  Authorization: AziYSzqa5TMdwN2ysCjnmfN4
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -71,16 +71,16 @@ Request:
 Response:
   Status: 200 OK
   Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 121
+  Content-Length: 101
   Content-Type: application/json; charset=utf-8
-  ETag: W/"266cba65d97f266078ef66ee6893c5bd"
-  X-Request-Id: 07f784a0-004c-41ff-8916-dd3107bd8634
-  X-Runtime: 0.004291
+  ETag: W/"1fa33aa7c22199b60d960e42e1bb30db"
+  X-Request-Id: 2cbc0ee3-83f7-49ca-b726-702c3b4d3829
+  X-Runtime: 0.004795
 
   {
     "id": 5,
-    "name": "[\"beatae\", \"voluptatem\"]",
-    "email": "shawna.gulgowski@hackettblock.io",
+    "name": "[\"labore\", \"quos\"]",
+    "email": "angelina@lemke.org",
     "role": "guest",
     "disabled": false
   }
@@ -99,7 +99,7 @@ Parameters:
 Request:
   POST /users
   Accept: application/json
-  Authorization: FtybRnJGxB22HikoUhM8m3DA
+  Authorization: Rf1cHJVuwmdRLdBm9kHaLwBd
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -111,20 +111,20 @@ Response:
   Cache-Control: max-age=0, private, must-revalidate
   Content-Length: 292
   Content-Type: application/json; charset=utf-8
-  ETag: W/"b4ef85c2c66965f374f85bd57dd8852b"
-  X-Request-Id: 659f5fda-dd4f-4c3e-8008-458d71708485
-  X-Runtime: 0.011386
+  ETag: W/"22ff986f7b11ac9e2d1b62843369da53"
+  X-Request-Id: 517dc938-fa25-4cba-8adc-317ec7fae402
+  X-Runtime: 0.016930
 
   {
     "id": 6,
     "name": "Martin Craigs",
     "email": "email@example.com",
     "role": "guest",
-    "password_digest": "$2a$04$IsVputzM5kxq10yI4IIw..q7VWntNAspTLpsyvot1bVdqABWv3muK",
-    "auth_token": "UE2ee69aJzB36gZDiVgjBKyd",
+    "password_digest": "$2a$04$sXV3vMVWe/COrKDx4WrnkOn.Ow2FxaW8KitO3AZJYUWXT81rltNvu",
+    "auth_token": "ydJ5Mp2sm1dSbJqBk4vaNjcG",
     "disabled": false,
-    "created_at": "2017-08-06T00:09:14.068Z",
-    "updated_at": "2017-08-06T00:09:14.068Z"
+    "created_at": "2017-08-06T15:22:57.625Z",
+    "updated_at": "2017-08-06T15:22:57.625Z"
   }
 
 
@@ -141,7 +141,7 @@ Parameters:
 Request:
   PUT /users/1
   Accept: application/json
-  Authorization: WrHYkNMjRuJaaHLU3f7ptvYg
+  Authorization: JQuWMKmeSjYFyDLJXJvABTkU
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -151,8 +151,8 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Request-Id: 25d08162-3685-48e7-871d-4cb39f37caed
-  X-Runtime: 0.008777
+  X-Request-Id: 586848dd-f94b-4a1f-bdcb-fdebccd4fd04
+  X-Runtime: 0.013043
 
 
 Deleting a user
@@ -161,7 +161,7 @@ Deleting a user
 Request:
   DELETE /users/4
   Accept: application/json
-  Authorization: aaph9WMbXQGMfV92Nkg3THdC
+  Authorization: 2G4urLhjMnD7nHWtKgtC2onR
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -169,5 +169,5 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Request-Id: 970b3ad2-c487-459f-bf83-4a91de7687a1
-  X-Runtime: 0.005268
+  X-Request-Id: 777aa9e8-9eec-47a1-9b5e-318aa579c0e5
+  X-Runtime: 0.011503

@@ -159,6 +159,22 @@ table th, table td {
                   <span class="description">Authorization token to be sent in request headers for using other API actions</span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                    <span class="name">name</span>
+                </td>
+                <td>
+                  <span class="description">Name of the user</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">role</span>
+                </td>
+                <td>
+                  <span class="description">Role of the user. One of [admin, user, guest]</span>
+                </td>
+              </tr>
             </tbody>
           </table>
 
@@ -175,10 +191,10 @@ Cookie: </pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"email":"gielle.lubowitz@von.org","password":"12345678"}</pre>
+            <pre class="request body">{"email":"celestino_von@leuschke.io","password":"12345678"}</pre>
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/signin&quot; -d &#39;{&quot;email&quot;:&quot;gielle.lubowitz@von.org&quot;,&quot;password&quot;:&quot;12345678&quot;}&#39; -X POST \
+            <pre class="request curl">curl &quot;http://localhost:3000/signin&quot; -d &#39;{&quot;email&quot;:&quot;celestino_von@leuschke.io&quot;,&quot;password&quot;:&quot;12345678&quot;}&#39; -X POST \
 	-H &quot;Accept: application/json&quot; \
 	-H &quot;Content-Type: application/json&quot; \
 	-H &quot;Host: example.org&quot; \
@@ -187,16 +203,18 @@ Cookie: </pre>
             <h3>Response</h3>
               <h4>Headers</h4>
               <pre class="response headers">Content-Type: application/json; charset=utf-8
-ETag: W/&quot;2e7fb502f8a8dc102ef0e4cf5df2dbe0&quot;
+ETag: W/&quot;6343ab5093077ea3162e919d5b532b9f&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1e8ac5f2-6486-4a77-a1f6-e7a870a48a0d
-X-Runtime: 0.021122
-Content-Length: 41</pre>
+X-Request-Id: 104a1248-4b5b-4fdd-aa98-f61dff5264c4
+X-Runtime: 0.287134
+Content-Length: 89</pre>
             <h4>Status</h4>
             <pre class="response status">201 Created</pre>
               <h4>Body</h4>
               <pre class="response body">{
-  &quot;auth_token&quot;: &quot;akdecpbr52yF6nUgV9un3VZY&quot;
+  &quot;auth_token&quot;: &quot;jbp7brvc7Erq3jihbzuxQLDu&quot;,
+  &quot;name&quot;: &quot;[\&quot;similique\&quot;, \&quot;et\&quot;]&quot;,
+  &quot;role&quot;: &quot;admin&quot;
 }</pre>
       </div>
     </div>

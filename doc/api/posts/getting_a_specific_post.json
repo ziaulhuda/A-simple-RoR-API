@@ -38,7 +38,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "rhBAry1m8yjgnytoei62oFKz",
+        "Authorization": "mogtFWWo8Bpgks32B8cphub4",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -47,17 +47,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 4,\n  \"title\": \"[\\\"cumque\\\", \\\"voluptates\\\", \\\"esse\\\", \\\"temporibus\\\"]\",\n  \"body\": \"[\\\"Debitis est sit quia sunt. In quia repudiandae est. Voluptatem dolores dolorum eos vero itaque praesentium occaecati. Autem dolore nesciunt dolorum nihil in dignissimos.\\\", \\\"Ut voluptatem omnis. Perspiciatis quia omnis qui consequuntur. Libero dolorum repellat beatae quasi aut. Qui dolorem exercitationem asperiores id.\\\", \\\"Perspiciatis nihil facilis eligendi earum. Est molestiae nostrum. In sit hic.\\\"]\",\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T00:09:13.756Z\",\n  \"updated_at\": \"2017-08-06T00:09:13.756Z\"\n}",
+      "response_body": "{\n  \"id\": 4,\n  \"title\": \"[\\\"molestias\\\", \\\"officiis\\\", \\\"consequuntur\\\", \\\"laborum\\\"]\",\n  \"body\": \"[\\\"Consequatur vitae impedit esse. Repellendus pariatur dolor quaerat eos. Sint voluptatibus magnam veritatis fugit id. Commodi illum illo ex similique eum quis consequuntur. Soluta debitis sunt minima laboriosam.\\\", \\\"Assumenda quo harum sapiente repudiandae praesentium. Aut et maxime distinctio. Excepturi ea libero minima minus ut dolorem. Pariatur suscipit est omnis excepturi ipsum.\\\", \\\"Velit nisi illum. Aliquid qui deserunt labore eos autem. Modi minima magni qui rerum et.\\\"]\",\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T15:22:57.074Z\",\n  \"updated_at\": \"2017-08-06T15:22:57.074Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"1b4d9e4b6c41767ef89d558a22e478ff\"",
+        "ETag": "W/\"d9483c1661f587ab234f5b8c1554ecb5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ae82d97e-5c01-4341-80b9-86aa282a2e02",
-        "X-Runtime": "0.003684",
-        "Content-Length": "585"
+        "X-Request-Id": "14ed15d4-6410-418a-8263-51c4bb560040",
+        "X-Runtime": "0.005314",
+        "Content-Length": "666"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/posts/4\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: rhBAry1m8yjgnytoei62oFKz\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/posts/4\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: mogtFWWo8Bpgks32B8cphub4\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

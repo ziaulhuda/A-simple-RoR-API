@@ -43,7 +43,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "TD3hRyQLTCJqFpy1D7ttSgDm",
+        "Authorization": "AziYSzqa5TMdwN2ysCjnmfN4",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -52,17 +52,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 5,\n  \"name\": \"[\\\"beatae\\\", \\\"voluptatem\\\"]\",\n  \"email\": \"shawna.gulgowski@hackettblock.io\",\n  \"role\": \"guest\",\n  \"disabled\": false\n}",
+      "response_body": "{\n  \"id\": 5,\n  \"name\": \"[\\\"labore\\\", \\\"quos\\\"]\",\n  \"email\": \"angelina@lemke.org\",\n  \"role\": \"guest\",\n  \"disabled\": false\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"266cba65d97f266078ef66ee6893c5bd\"",
+        "ETag": "W/\"1fa33aa7c22199b60d960e42e1bb30db\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "07f784a0-004c-41ff-8916-dd3107bd8634",
-        "X-Runtime": "0.004291",
-        "Content-Length": "121"
+        "X-Request-Id": "2cbc0ee3-83f7-49ca-b726-702c3b4d3829",
+        "X-Runtime": "0.004795",
+        "Content-Length": "101"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/users/5\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: TD3hRyQLTCJqFpy1D7ttSgDm\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/users/5\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: AziYSzqa5TMdwN2ysCjnmfN4\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

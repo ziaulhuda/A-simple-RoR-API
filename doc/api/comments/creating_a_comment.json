@@ -38,11 +38,11 @@
     {
       "request_method": "POST",
       "request_path": "/posts/1/comments/",
-      "request_body": "{\"body\":\"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\"}",
+      "request_body": "{\"body\":\"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\"}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "5UM5X5dMvRrdrKJiWjj32xWT",
+        "Authorization": "L8GmtKKZpzvDY86GyLvcQfwy",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -51,17 +51,17 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 6,\n  \"body\": \"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T00:09:13.556Z\",\n  \"updated_at\": \"2017-08-06T00:09:13.556Z\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"body\": \"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T15:22:56.169Z\",\n  \"updated_at\": \"2017-08-06T15:22:56.169Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"198228d54f12c8338b1823c9ca704017\"",
+        "ETag": "W/\"e858537c2e2517512d6a6f4c945ef85a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c3a161c2-ecad-4bc1-a669-da92251bd99a",
-        "X-Runtime": "0.007080",
-        "Content-Length": "527"
+        "X-Request-Id": "aef9b5d6-1d1c-4685-bb9f-3822240d3111",
+        "X-Runtime": "0.005499",
+        "Content-Length": "490"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/posts/1/comments/\" -d '{\"body\":\"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: 5UM5X5dMvRrdrKJiWjj32xWT\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/1/comments/\" -d '{\"body\":\"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: L8GmtKKZpzvDY86GyLvcQfwy\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }
