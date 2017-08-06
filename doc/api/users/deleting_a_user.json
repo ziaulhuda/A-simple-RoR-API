@@ -1,0 +1,41 @@
+{
+  "resource": "Users",
+  "resource_explanation": "API to handel User resource. Authorization required.",
+  "http_method": "DELETE",
+  "route": "/users/:id",
+  "description": "Deleting a user",
+  "explanation": "Admin can delete all other users. \"user\" and guest type users can only delete their own records.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/users/4",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "aaph9WMbXQGMfV92Nkg3THdC",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "970b3ad2-c487-459f-bf83-4a91de7687a1",
+        "X-Runtime": "0.005268"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/users/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: aaph9WMbXQGMfV92Nkg3THdC\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

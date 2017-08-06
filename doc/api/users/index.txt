@@ -1,0 +1,173 @@
+Getting a list of users
+-----------------------
+
+Request:
+  GET /users
+  Accept: application/json
+  Authorization: TSJpN5h32JiPHu1KNUHNAgwx
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 533
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"e30adb2160e8facd5ae533da3cc0bd54"
+  X-Request-Id: cc7b6cc4-83b5-441c-8429-a60ecea92bec
+  X-Runtime: 0.005863
+
+  [
+    {
+      "id": 1,
+      "name": "[\"et\", \"qui\"]",
+      "email": "albert.wolff@windler.info",
+      "role": "admin",
+      "disabled": false
+    },
+    {
+      "id": 2,
+      "name": "[\"recusandae\", \"quia\"]",
+      "email": "tyrel@wardziemann.name",
+      "role": "guest",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "name": "[\"rerum\", \"sed\"]",
+      "email": "izaiah_hickle@moen.net",
+      "role": "guest",
+      "disabled": false
+    },
+    {
+      "id": 4,
+      "name": "[\"quam\", \"fugit\"]",
+      "email": "clementina_weinat@rau.biz",
+      "role": "guest",
+      "disabled": false
+    },
+    {
+      "id": 5,
+      "name": "[\"dolorem\", \"maiores\"]",
+      "email": "lonzo@kuvalis.info",
+      "role": "guest",
+      "disabled": false
+    }
+  ]
+
+
+Getting a specific user
+-----------------------
+
+Request:
+  GET /users/5
+  Accept: application/json
+  Authorization: TD3hRyQLTCJqFpy1D7ttSgDm
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 121
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"266cba65d97f266078ef66ee6893c5bd"
+  X-Request-Id: 07f784a0-004c-41ff-8916-dd3107bd8634
+  X-Runtime: 0.004291
+
+  {
+    "id": 5,
+    "name": "[\"beatae\", \"voluptatem\"]",
+    "email": "shawna.gulgowski@hackettblock.io",
+    "role": "guest",
+    "disabled": false
+  }
+
+
+Creating a user
+---------------
+
+Parameters:
+  * name - Name of the user
+  * email - Email of the user
+  * password - Password of the user
+  * role - user role ["admin", "user", "guest"(default)]. Only admin can provide
+  * disabled - Is the user disabled from logging in? Only admin can provide
+
+Request:
+  POST /users
+  Accept: application/json
+  Authorization: FtybRnJGxB22HikoUhM8m3DA
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+  {"name":"Martin Craigs","email":"email@example.com","password":"12345678"}
+
+Response:
+  Status: 201 Created
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 292
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"b4ef85c2c66965f374f85bd57dd8852b"
+  X-Request-Id: 659f5fda-dd4f-4c3e-8008-458d71708485
+  X-Runtime: 0.011386
+
+  {
+    "id": 6,
+    "name": "Martin Craigs",
+    "email": "email@example.com",
+    "role": "guest",
+    "password_digest": "$2a$04$IsVputzM5kxq10yI4IIw..q7VWntNAspTLpsyvot1bVdqABWv3muK",
+    "auth_token": "UE2ee69aJzB36gZDiVgjBKyd",
+    "disabled": false,
+    "created_at": "2017-08-06T00:09:14.068Z",
+    "updated_at": "2017-08-06T00:09:14.068Z"
+  }
+
+
+Updating a user
+---------------
+
+Parameters:
+  * name - Name of the user
+  * email - Email of the user
+  * password - Password of the user
+  * role - user role ["admin", "user", "guest"(default)]. Only admin can provide.
+  * disabled - Is the user disabled from logging in? Only admin can provide.
+
+Request:
+  PUT /users/1
+  Accept: application/json
+  Authorization: WrHYkNMjRuJaaHLU3f7ptvYg
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+  {"name":"Greate King"}
+
+Response:
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Request-Id: 25d08162-3685-48e7-871d-4cb39f37caed
+  X-Runtime: 0.008777
+
+
+Deleting a user
+---------------
+
+Request:
+  DELETE /users/4
+  Accept: application/json
+  Authorization: aaph9WMbXQGMfV92Nkg3THdC
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Request-Id: 970b3ad2-c487-459f-bf83-4a91de7687a1
+  X-Runtime: 0.005268

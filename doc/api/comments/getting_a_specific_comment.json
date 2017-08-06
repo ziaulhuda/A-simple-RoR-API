@@ -1,0 +1,63 @@
+{
+  "resource": "Comments",
+  "resource_explanation": "API to handel Comment resource. Authorization required .",
+  "http_method": "GET",
+  "route": "/posts/:post_id/comments/:id",
+  "description": "Getting a specific comment",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the comment"
+    },
+    {
+      "Type": "Text",
+      "name": "body",
+      "description": "Contents of the comment"
+    },
+    {
+      "Type": "Number",
+      "name": "post_id",
+      "description": "ID of the post this comment is related to"
+    },
+    {
+      "Type": "Number",
+      "name": "user_id",
+      "description": "ID of the creator"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/posts/1/comments/4",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "85JNnnuphyuJ4vS746u8yEq3",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 4,\n  \"body\": \"[\\\"Dolorem laboriosam voluptatem provident perspiciatis et est quibusdam. Vel dolores delectus est et. Ipsam sed consequatur rem est qui.\\\", \\\"Rem repellendus ut rerum quidem maiores est omnis. Eius voluptates ut magnam. Omnis nobis aut sed reprehenderit est neque rerum. Ullam hic et est fuga ex vel. Ducimus aut rem officiis.\\\", \\\"Molestiae reprehenderit perferendis doloribus asperiores omnis eius ipsam. Eum iusto quo ut. Voluptates et et deserunt.\\\"]\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T00:09:13.489Z\",\n  \"updated_at\": \"2017-08-06T00:09:13.489Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8ee8ffa6611ebb4ddfd1df0717c2df84\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "8467dbb5-d768-40d5-9615-a3dabb95d269",
+        "X-Runtime": "0.006461",
+        "Content-Length": "577"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/posts/1/comments/4\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: 85JNnnuphyuJ4vS746u8yEq3\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

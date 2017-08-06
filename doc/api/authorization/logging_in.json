@@ -1,0 +1,56 @@
+{
+  "resource": "Authorization",
+  "resource_explanation": "Authorization service",
+  "http_method": "POST",
+  "route": "/signin",
+  "description": "Logging in",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "email",
+      "description": "Email of the user"
+    },
+    {
+      "required": true,
+      "name": "password",
+      "description": "Password of the user"
+    }
+  ],
+  "response_fields": [
+    {
+      "Type": "String",
+      "name": "auth_token",
+      "description": "Authorization token to be sent in request headers for using other API actions"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/signin",
+      "request_body": "{\"email\":\"gielle.lubowitz@von.org\",\"password\":\"12345678\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"auth_token\": \"akdecpbr52yF6nUgV9un3VZY\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"2e7fb502f8a8dc102ef0e4cf5df2dbe0\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "1e8ac5f2-6486-4a77-a1f6-e7a870a48a0d",
+        "X-Runtime": "0.021122",
+        "Content-Length": "41"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/signin\" -d '{\"email\":\"gielle.lubowitz@von.org\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

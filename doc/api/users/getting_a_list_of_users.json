@@ -1,0 +1,68 @@
+{
+  "resource": "Users",
+  "resource_explanation": "API to handel User resource. Authorization required.",
+  "http_method": "GET",
+  "route": "/users",
+  "description": "Getting a list of users",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the user"
+    },
+    {
+      "Type": "String",
+      "name": "name",
+      "description": "Name of the user"
+    },
+    {
+      "Type": "String",
+      "name": "email",
+      "description": "Email of the user"
+    },
+    {
+      "Type": "String",
+      "name": "role",
+      "description": "Role of the user (Only if the logged in user is admin)"
+    },
+    {
+      "Type": "Boolean",
+      "name": "disabled",
+      "description": "Has user been disabled (Only if the logged in user is admin)"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/users",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "TSJpN5h32JiPHu1KNUHNAgwx",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"[\\\"et\\\", \\\"qui\\\"]\",\n    \"email\": \"albert.wolff@windler.info\",\n    \"role\": \"admin\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 2,\n    \"name\": \"[\\\"recusandae\\\", \\\"quia\\\"]\",\n    \"email\": \"tyrel@wardziemann.name\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"[\\\"rerum\\\", \\\"sed\\\"]\",\n    \"email\": \"izaiah_hickle@moen.net\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 4,\n    \"name\": \"[\\\"quam\\\", \\\"fugit\\\"]\",\n    \"email\": \"clementina_weinat@rau.biz\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 5,\n    \"name\": \"[\\\"dolorem\\\", \\\"maiores\\\"]\",\n    \"email\": \"lonzo@kuvalis.info\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"e30adb2160e8facd5ae533da3cc0bd54\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "cc7b6cc4-83b5-441c-8429-a60ecea92bec",
+        "X-Runtime": "0.005863",
+        "Content-Length": "533"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: TSJpN5h32JiPHu1KNUHNAgwx\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

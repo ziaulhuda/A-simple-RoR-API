@@ -1,0 +1,48 @@
+Logging in
+----------
+
+Parameters:
+  * email - Email of the user
+  * password - Password of the user
+
+Request:
+  POST /signin
+  Accept: application/json
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+  {"email":"gielle.lubowitz@von.org","password":"12345678"}
+
+Response:
+  Status: 201 Created
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 41
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"2e7fb502f8a8dc102ef0e4cf5df2dbe0"
+  X-Request-Id: 1e8ac5f2-6486-4a77-a1f6-e7a870a48a0d
+  X-Runtime: 0.021122
+
+  {
+    "auth_token": "akdecpbr52yF6nUgV9un3VZY"
+  }
+
+
+Signing out
+-----------
+
+Request:
+  DELETE /signout/1
+  Accept: application/json
+  Authorization: SLBiH8PXxHNzYyHEKBF4dVMS
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Request-Id: 7ed7afd8-5f78-4df1-9b7a-86f9b55ba22a
+  X-Runtime: 0.006232
+
+

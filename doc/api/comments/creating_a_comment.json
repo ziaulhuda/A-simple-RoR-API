@@ -1,0 +1,67 @@
+{
+  "resource": "Comments",
+  "resource_explanation": "API to handel Comment resource. Authorization required .",
+  "http_method": "POST",
+  "route": "/posts/:post_id/comments/",
+  "description": "Creating a comment",
+  "explanation": "Admin and \"user\" can create comments. Guest users cannot create a comment.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "body",
+      "description": "Contents of the comments"
+    }
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the comment"
+    },
+    {
+      "Type": "Text",
+      "name": "body",
+      "description": "Contents of the comment"
+    },
+    {
+      "Type": "Number",
+      "name": "post_id",
+      "description": "ID of the post this comment is related to"
+    },
+    {
+      "Type": "Number",
+      "name": "user_id",
+      "description": "ID of the creator"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/posts/1/comments/",
+      "request_body": "{\"body\":\"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "5UM5X5dMvRrdrKJiWjj32xWT",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 6,\n  \"body\": \"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T00:09:13.556Z\",\n  \"updated_at\": \"2017-08-06T00:09:13.556Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"198228d54f12c8338b1823c9ca704017\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "c3a161c2-ecad-4bc1-a669-da92251bd99a",
+        "X-Runtime": "0.007080",
+        "Content-Length": "527"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/posts/1/comments/\" -d '{\"body\":\"Rem officia nisi quasi soluta ut. Officiis neque minus ab debitis. Et officiis exercitationem commodi. Repellendus unde dignissimos. Necessitatibus magnam et expedita distinctio consequuntur. Vel molestiae necessitatibus doloremque facilis. Sapiente provident quasi placeat ratione. Tenetur consequuntur deleniti eum. Eos ut cumque repudiandae. Consequuntur ut voluptas. Quia numquam iure libero possimus.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: 5UM5X5dMvRrdrKJiWjj32xWT\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

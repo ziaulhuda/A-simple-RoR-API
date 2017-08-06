@@ -1,0 +1,172 @@
+Getting a list of posts
+-----------------------
+
+Request:
+  GET /posts
+  Accept: application/json
+  Authorization: KgWVkLyLotBBmn5yh8FdrXgi
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 3071
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"c0d4d55b730ae17d103863dcf251a947"
+  X-Request-Id: 381d1ab0-b4f6-461a-ab5e-a99309a4aa92
+  X-Runtime: 0.009938
+
+  [
+    {
+      "id": 1,
+      "title": "[\"et\", \"ullam\", \"molestiae\", \"reiciendis\"]",
+      "body": "[\"Eius voluptas veniam rerum sit voluptas quaerat est. Sit nihil voluptatem consequatur. Nihil voluptatem architecto. Libero modi temporibus aut. Accusantium voluptate earum nobis omnis ut distinctio aut.\", \"Eos omnis autem. Labore esse sed numquam iure. Corrupti quae tenetur.\", \"Recusandae expedita voluptate laborum consequuntur non dolor. In dicta sit illum et quidem aut. Aperiam ea quod ut. Dolor earum ut temporibus sunt voluptatem.\"]",
+      "user_id": 1,
+      "created_at": "2017-08-06T00:09:13.689Z",
+      "updated_at": "2017-08-06T00:09:13.689Z"
+    },
+    {
+      "id": 2,
+      "title": "[\"voluptatem\", \"sed\", \"ullam\", \"sit\"]",
+      "body": "[\"Non incidunt rerum sapiente at. Rerum dolores adipisci quis. Rerum numquam fugit sapiente.\", \"Blanditiis ratione non quo. Corporis nesciunt consectetur placeat porro. Et dolor nihil enim. Fugiat reiciendis rem voluptatem blanditiis exercitationem sed.\", \"Ut saepe molestias. Mollitia eveniet non et. Optio ducimus voluptates et. Sit porro eos. Quia sed est quisquam sint maxime illum quibusdam.\"]",
+      "user_id": 1,
+      "created_at": "2017-08-06T00:09:13.693Z",
+      "updated_at": "2017-08-06T00:09:13.693Z"
+    },
+    {
+      "id": 3,
+      "title": "[\"distinctio\", \"quam\", \"quis\", \"nemo\"]",
+      "body": "[\"Consequatur recusandae at aut corrupti et. Fugiat ratione est omnis quia qui ea. Deleniti fuga enim ut adipisci itaque dolores saepe. Et itaque dolore fuga voluptatem eos consequatur. Et alias sed dolore.\", \"Dicta qui velit et. Assumenda consequatur tempore tempora quod voluptatibus. Odio sit et et.\", \"Excepturi qui et aut saepe culpa expedita nihil. Omnis culpa nam. Laudantium quos dolor.\"]",
+      "user_id": 1,
+      "created_at": "2017-08-06T00:09:13.696Z",
+      "updated_at": "2017-08-06T00:09:13.696Z"
+    },
+    {
+      "id": 4,
+      "title": "[\"debitis\", \"exercitationem\", \"eos\", \"suscipit\"]",
+      "body": "[\"Quia aut eveniet qui mollitia voluptatum. Cupiditate nihil porro dicta ut aut ipsa. Eligendi aliquid provident ut. Qui expedita ex.\", \"Quidem dolor neque perspiciatis similique. Id quidem commodi ut optio veniam qui repellendus. Vero aut iste ea temporibus illum. Quo laboriosam est odio ut labore. Odit fugit perferendis adipisci sed.\", \"Illum nemo aut tempora delectus culpa magnam. Est unde non magnam sint odit. Odit aspernatur id autem omnis explicabo. Omnis reprehenderit quis rerum unde.\"]",
+      "user_id": 1,
+      "created_at": "2017-08-06T00:09:13.701Z",
+      "updated_at": "2017-08-06T00:09:13.701Z"
+    },
+    {
+      "id": 5,
+      "title": "[\"magnam\", \"laborum\", \"doloremque\", \"corporis\"]",
+      "body": "[\"Cupiditate dolorem beatae laborum qui quia repudiandae. Est non aut iusto voluptatem impedit magnam. Minus sed corporis. Eos commodi accusamus et sint vel eum porro. Est est nemo consequatur nisi dicta.\", \"Error hic unde. Vel magnam maiores. Sunt minus officiis neque et consequatur. Et est cupiditate molestiae perferendis non. Sequi id ex ratione dolores.\", \"Tempore est beatae. Vel dicta nostrum sint voluptas autem qui. Rerum ut nostrum.\"]",
+      "user_id": 1,
+      "created_at": "2017-08-06T00:09:13.707Z",
+      "updated_at": "2017-08-06T00:09:13.707Z"
+    }
+  ]
+
+
+Getting a specific post
+-----------------------
+
+Request:
+  GET /posts/4
+  Accept: application/json
+  Authorization: rhBAry1m8yjgnytoei62oFKz
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 585
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"1b4d9e4b6c41767ef89d558a22e478ff"
+  X-Request-Id: ae82d97e-5c01-4341-80b9-86aa282a2e02
+  X-Runtime: 0.003684
+
+  {
+    "id": 4,
+    "title": "[\"cumque\", \"voluptates\", \"esse\", \"temporibus\"]",
+    "body": "[\"Debitis est sit quia sunt. In quia repudiandae est. Voluptatem dolores dolorum eos vero itaque praesentium occaecati. Autem dolore nesciunt dolorum nihil in dignissimos.\", \"Ut voluptatem omnis. Perspiciatis quia omnis qui consequuntur. Libero dolorum repellat beatae quasi aut. Qui dolorem exercitationem asperiores id.\", \"Perspiciatis nihil facilis eligendi earum. Est molestiae nostrum. In sit hic.\"]",
+    "user_id": 1,
+    "created_at": "2017-08-06T00:09:13.756Z",
+    "updated_at": "2017-08-06T00:09:13.756Z"
+  }
+
+
+Creating a post
+---------------
+
+Parameters:
+  * title - Title of the post
+  * body - Contents of the post
+
+Request:
+  POST /posts
+  Accept: application/json
+  Authorization: QKmGiiPuvoXp3A7m9GucwT1e
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+  {"title":"A wonderful post","body":"Corrupti ipsum consequuntur repudiandae omnis voluptatibus. Recusandae incidunt rem rerum voluptatem. Quia libero illum laborum. Repellendus provident ducimus consequatur explicabo iusto. Ut et natus quia. Error temporibus ea nemo. Deleniti rerum placeat quia et. Cum sit vel. Repudiandae blanditiis repellendus sequi quidem nihil quae mollitia. Quae sunt eum eius. Unde debitis dolores voluptatem assumenda."}
+
+Response:
+  Status: 201 Created
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 545
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"4747937aec4e049c3b49f8d99cef53cf"
+  X-Request-Id: f4698c14-8ba4-4a14-8e71-9e54361d7354
+  X-Runtime: 0.007154
+
+  {
+    "id": 6,
+    "title": "A wonderful post",
+    "body": "Corrupti ipsum consequuntur repudiandae omnis voluptatibus. Recusandae incidunt rem rerum voluptatem. Quia libero illum laborum. Repellendus provident ducimus consequatur explicabo iusto. Ut et natus quia. Error temporibus ea nemo. Deleniti rerum placeat quia et. Cum sit vel. Repudiandae blanditiis repellendus sequi quidem nihil quae mollitia. Quae sunt eum eius. Unde debitis dolores voluptatem assumenda.",
+    "user_id": 1,
+    "created_at": "2017-08-06T00:09:13.805Z",
+    "updated_at": "2017-08-06T00:09:13.805Z"
+  }
+
+
+Updating a post
+---------------
+
+Parameters:
+  * title - Title of the post
+  * body - Contents of the post
+
+Request:
+  PUT /posts/4
+  Accept: application/json
+  Authorization: 9pUCLS51DjFUye9VXvWDnDxB
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+  {"title":"A wonderful post"}
+
+Response:
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Request-Id: 4cd47da4-9ffd-47d6-a0f6-7d1cda246f77
+  X-Runtime: 0.005104
+
+
+Deleting a post
+---------------
+
+Request:
+  DELETE /posts/4
+  Accept: application/json
+  Authorization: mgPWi1z8qsFxWyL6Xsk1pCDu
+  Content-Type: application/json
+  Cookie: 
+  Host: example.org
+
+Response:
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Request-Id: fa9d0f5b-b94b-4467-90c8-490d08b9794c
+  X-Runtime: 0.007122
+
+

@@ -1,0 +1,90 @@
+{
+  "resource": "Users",
+  "resource_explanation": "API to handel User resource. Authorization required.",
+  "http_method": "POST",
+  "route": "/users",
+  "description": "Creating a user",
+  "explanation": "Admin user can create all types of users. \"user\" type users can only create \"guest\" type users. Guest users cannot create a user.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "name",
+      "description": "Name of the user"
+    },
+    {
+      "required": true,
+      "name": "email",
+      "description": "Email of the user"
+    },
+    {
+      "required": true,
+      "name": "password",
+      "description": "Password of the user"
+    },
+    {
+      "name": "role",
+      "description": "user role [\"admin\", \"user\", \"guest\"(default)]. Only admin can provide"
+    },
+    {
+      "name": "disabled",
+      "description": "Is the user disabled from logging in? Only admin can provide"
+    }
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the user"
+    },
+    {
+      "Type": "String",
+      "name": "name",
+      "description": "Name of order"
+    },
+    {
+      "Type": "String",
+      "name": "email",
+      "description": "Email of the user"
+    },
+    {
+      "Type": "String",
+      "name": "role",
+      "description": "Role of the user (Only if the logged in user is admin)"
+    },
+    {
+      "Type": "Boolean",
+      "name": "disabled",
+      "description": "Has user been disabled (Only if the logged in user is admin)"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/users",
+      "request_body": "{\"name\":\"Martin Craigs\",\"email\":\"email@example.com\",\"password\":\"12345678\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "FtybRnJGxB22HikoUhM8m3DA",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 6,\n  \"name\": \"Martin Craigs\",\n  \"email\": \"email@example.com\",\n  \"role\": \"guest\",\n  \"password_digest\": \"$2a$04$IsVputzM5kxq10yI4IIw..q7VWntNAspTLpsyvot1bVdqABWv3muK\",\n  \"auth_token\": \"UE2ee69aJzB36gZDiVgjBKyd\",\n  \"disabled\": false,\n  \"created_at\": \"2017-08-06T00:09:14.068Z\",\n  \"updated_at\": \"2017-08-06T00:09:14.068Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b4ef85c2c66965f374f85bd57dd8852b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "659f5fda-dd4f-4c3e-8008-458d71708485",
+        "X-Runtime": "0.011386",
+        "Content-Length": "292"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/users\" -d '{\"name\":\"Martin Craigs\",\"email\":\"email@example.com\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: FtybRnJGxB22HikoUhM8m3DA\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

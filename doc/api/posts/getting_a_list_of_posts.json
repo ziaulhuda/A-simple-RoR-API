@@ -1,0 +1,63 @@
+{
+  "resource": "Posts",
+  "resource_explanation": "API to handel Post resource. Authorization required .",
+  "http_method": "GET",
+  "route": "/posts",
+  "description": "Getting a list of posts",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the post"
+    },
+    {
+      "Type": "String",
+      "name": "title",
+      "description": "Title of the post"
+    },
+    {
+      "Type": "Text",
+      "name": "body",
+      "description": "Contents of the post"
+    },
+    {
+      "Type": "Number",
+      "name": "user_id",
+      "description": "ID of the creator"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/posts",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "KgWVkLyLotBBmn5yh8FdrXgi",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"title\": \"[\\\"et\\\", \\\"ullam\\\", \\\"molestiae\\\", \\\"reiciendis\\\"]\",\n    \"body\": \"[\\\"Eius voluptas veniam rerum sit voluptas quaerat est. Sit nihil voluptatem consequatur. Nihil voluptatem architecto. Libero modi temporibus aut. Accusantium voluptate earum nobis omnis ut distinctio aut.\\\", \\\"Eos omnis autem. Labore esse sed numquam iure. Corrupti quae tenetur.\\\", \\\"Recusandae expedita voluptate laborum consequuntur non dolor. In dicta sit illum et quidem aut. Aperiam ea quod ut. Dolor earum ut temporibus sunt voluptatem.\\\"]\",\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.689Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.689Z\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"[\\\"voluptatem\\\", \\\"sed\\\", \\\"ullam\\\", \\\"sit\\\"]\",\n    \"body\": \"[\\\"Non incidunt rerum sapiente at. Rerum dolores adipisci quis. Rerum numquam fugit sapiente.\\\", \\\"Blanditiis ratione non quo. Corporis nesciunt consectetur placeat porro. Et dolor nihil enim. Fugiat reiciendis rem voluptatem blanditiis exercitationem sed.\\\", \\\"Ut saepe molestias. Mollitia eveniet non et. Optio ducimus voluptates et. Sit porro eos. Quia sed est quisquam sint maxime illum quibusdam.\\\"]\",\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.693Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.693Z\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"[\\\"distinctio\\\", \\\"quam\\\", \\\"quis\\\", \\\"nemo\\\"]\",\n    \"body\": \"[\\\"Consequatur recusandae at aut corrupti et. Fugiat ratione est omnis quia qui ea. Deleniti fuga enim ut adipisci itaque dolores saepe. Et itaque dolore fuga voluptatem eos consequatur. Et alias sed dolore.\\\", \\\"Dicta qui velit et. Assumenda consequatur tempore tempora quod voluptatibus. Odio sit et et.\\\", \\\"Excepturi qui et aut saepe culpa expedita nihil. Omnis culpa nam. Laudantium quos dolor.\\\"]\",\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.696Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.696Z\"\n  },\n  {\n    \"id\": 4,\n    \"title\": \"[\\\"debitis\\\", \\\"exercitationem\\\", \\\"eos\\\", \\\"suscipit\\\"]\",\n    \"body\": \"[\\\"Quia aut eveniet qui mollitia voluptatum. Cupiditate nihil porro dicta ut aut ipsa. Eligendi aliquid provident ut. Qui expedita ex.\\\", \\\"Quidem dolor neque perspiciatis similique. Id quidem commodi ut optio veniam qui repellendus. Vero aut iste ea temporibus illum. Quo laboriosam est odio ut labore. Odit fugit perferendis adipisci sed.\\\", \\\"Illum nemo aut tempora delectus culpa magnam. Est unde non magnam sint odit. Odit aspernatur id autem omnis explicabo. Omnis reprehenderit quis rerum unde.\\\"]\",\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.701Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.701Z\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"[\\\"magnam\\\", \\\"laborum\\\", \\\"doloremque\\\", \\\"corporis\\\"]\",\n    \"body\": \"[\\\"Cupiditate dolorem beatae laborum qui quia repudiandae. Est non aut iusto voluptatem impedit magnam. Minus sed corporis. Eos commodi accusamus et sint vel eum porro. Est est nemo consequatur nisi dicta.\\\", \\\"Error hic unde. Vel magnam maiores. Sunt minus officiis neque et consequatur. Et est cupiditate molestiae perferendis non. Sequi id ex ratione dolores.\\\", \\\"Tempore est beatae. Vel dicta nostrum sint voluptas autem qui. Rerum ut nostrum.\\\"]\",\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.707Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.707Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c0d4d55b730ae17d103863dcf251a947\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "381d1ab0-b4f6-461a-ab5e-a99309a4aa92",
+        "X-Runtime": "0.009938",
+        "Content-Length": "3071"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/posts\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: KgWVkLyLotBBmn5yh8FdrXgi\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

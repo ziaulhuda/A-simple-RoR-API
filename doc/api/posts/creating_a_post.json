@@ -1,0 +1,72 @@
+{
+  "resource": "Posts",
+  "resource_explanation": "API to handel Post resource. Authorization required .",
+  "http_method": "POST",
+  "route": "/posts",
+  "description": "Creating a post",
+  "explanation": "Admin and \"user\" can create posts. Guest users cannot create a post.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "title",
+      "description": "Title of the post"
+    },
+    {
+      "required": true,
+      "name": "body",
+      "description": "Contents of the post"
+    }
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the post"
+    },
+    {
+      "Type": "String",
+      "name": "title",
+      "description": "Title of the post"
+    },
+    {
+      "Type": "Text",
+      "name": "body",
+      "description": "Contents of the post"
+    },
+    {
+      "Type": "Number",
+      "name": "user_id",
+      "description": "ID of the creator"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/posts",
+      "request_body": "{\"title\":\"A wonderful post\",\"body\":\"Corrupti ipsum consequuntur repudiandae omnis voluptatibus. Recusandae incidunt rem rerum voluptatem. Quia libero illum laborum. Repellendus provident ducimus consequatur explicabo iusto. Ut et natus quia. Error temporibus ea nemo. Deleniti rerum placeat quia et. Cum sit vel. Repudiandae blanditiis repellendus sequi quidem nihil quae mollitia. Quae sunt eum eius. Unde debitis dolores voluptatem assumenda.\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "QKmGiiPuvoXp3A7m9GucwT1e",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 6,\n  \"title\": \"A wonderful post\",\n  \"body\": \"Corrupti ipsum consequuntur repudiandae omnis voluptatibus. Recusandae incidunt rem rerum voluptatem. Quia libero illum laborum. Repellendus provident ducimus consequatur explicabo iusto. Ut et natus quia. Error temporibus ea nemo. Deleniti rerum placeat quia et. Cum sit vel. Repudiandae blanditiis repellendus sequi quidem nihil quae mollitia. Quae sunt eum eius. Unde debitis dolores voluptatem assumenda.\",\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T00:09:13.805Z\",\n  \"updated_at\": \"2017-08-06T00:09:13.805Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"4747937aec4e049c3b49f8d99cef53cf\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "f4698c14-8ba4-4a14-8e71-9e54361d7354",
+        "X-Runtime": "0.007154",
+        "Content-Length": "545"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/posts\" -d '{\"title\":\"A wonderful post\",\"body\":\"Corrupti ipsum consequuntur repudiandae omnis voluptatibus. Recusandae incidunt rem rerum voluptatem. Quia libero illum laborum. Repellendus provident ducimus consequatur explicabo iusto. Ut et natus quia. Error temporibus ea nemo. Deleniti rerum placeat quia et. Cum sit vel. Repudiandae blanditiis repellendus sequi quidem nihil quae mollitia. Quae sunt eum eius. Unde debitis dolores voluptatem assumenda.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: QKmGiiPuvoXp3A7m9GucwT1e\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

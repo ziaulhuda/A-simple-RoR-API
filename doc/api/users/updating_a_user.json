@@ -1,0 +1,65 @@
+{
+  "resource": "Users",
+  "resource_explanation": "API to handel User resource. Authorization required.",
+  "http_method": "PUT",
+  "route": "/users/:id",
+  "description": "Updating a user",
+  "explanation": "Admin can update all other users. \"user\" and guest type users can only update their own records.",
+  "parameters": [
+    {
+      "required": false,
+      "name": "name",
+      "description": "Name of the user"
+    },
+    {
+      "required": false,
+      "name": "email",
+      "description": "Email of the user"
+    },
+    {
+      "required": false,
+      "name": "password",
+      "description": "Password of the user"
+    },
+    {
+      "required": false,
+      "name": "role",
+      "description": "user role [\"admin\", \"user\", \"guest\"(default)]. Only admin can provide."
+    },
+    {
+      "required": false,
+      "name": "disabled",
+      "description": "Is the user disabled from logging in? Only admin can provide."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/users/1",
+      "request_body": "{\"name\":\"Greate King\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "WrHYkNMjRuJaaHLU3f7ptvYg",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "25d08162-3685-48e7-871d-4cb39f37caed",
+        "X-Runtime": "0.008777"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/users/1\" -d '{\"name\":\"Greate King\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: WrHYkNMjRuJaaHLU3f7ptvYg\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "resource": "Posts",
+  "resource_explanation": "API to handel Post resource. Authorization required .",
+  "http_method": "DELETE",
+  "route": "/posts/:id",
+  "description": "Deleting a post",
+  "explanation": "Admin can delete any post. \"user\" type users can only delete their own posts. Guests cannot delete any post.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/posts/4",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "mgPWi1z8qsFxWyL6Xsk1pCDu",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "fa9d0f5b-b94b-4467-90c8-490d08b9794c",
+        "X-Runtime": "0.007122"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/posts/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: mgPWi1z8qsFxWyL6Xsk1pCDu\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

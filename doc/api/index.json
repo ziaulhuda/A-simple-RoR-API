@@ -1,0 +1,147 @@
+{
+  "resources": [
+    {
+      "name": "Authorization",
+      "explanation": "Authorization service",
+      "examples": [
+        {
+          "description": "Logging in",
+          "link": "authorization/logging_in.json",
+          "groups": "all",
+          "route": "/signin",
+          "method": "post"
+        },
+        {
+          "description": "Signing out",
+          "link": "authorization/signing_out.json",
+          "groups": "all",
+          "route": "/signout/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "explanation": "API to handel Comment resource. Authorization required .",
+      "examples": [
+        {
+          "description": "Creating a comment",
+          "link": "comments/creating_a_comment.json",
+          "groups": "all",
+          "route": "/posts/:post_id/comments/",
+          "method": "post"
+        },
+        {
+          "description": "Deleting a comment",
+          "link": "comments/deleting_a_comment.json",
+          "groups": "all",
+          "route": "/posts/:post_id/comments/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Getting a list of comments",
+          "link": "comments/getting_a_list_of_comments.json",
+          "groups": "all",
+          "route": "/posts/:post_id/comments/",
+          "method": "get"
+        },
+        {
+          "description": "Getting a specific comment",
+          "link": "comments/getting_a_specific_comment.json",
+          "groups": "all",
+          "route": "/posts/:post_id/comments/:id",
+          "method": "get"
+        },
+        {
+          "description": "Updating a comment",
+          "link": "comments/updating_a_comment.json",
+          "groups": "all",
+          "route": "/posts/:post_id/comments/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "explanation": "API to handel Post resource. Authorization required .",
+      "examples": [
+        {
+          "description": "Creating a post",
+          "link": "posts/creating_a_post.json",
+          "groups": "all",
+          "route": "/posts",
+          "method": "post"
+        },
+        {
+          "description": "Deleting a post",
+          "link": "posts/deleting_a_post.json",
+          "groups": "all",
+          "route": "/posts/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Getting a list of posts",
+          "link": "posts/getting_a_list_of_posts.json",
+          "groups": "all",
+          "route": "/posts",
+          "method": "get"
+        },
+        {
+          "description": "Getting a specific post",
+          "link": "posts/getting_a_specific_post.json",
+          "groups": "all",
+          "route": "/posts/:id",
+          "method": "get"
+        },
+        {
+          "description": "Updating a post",
+          "link": "posts/updating_a_post.json",
+          "groups": "all",
+          "route": "/posts/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "explanation": "API to handel User resource. Authorization required.",
+      "examples": [
+        {
+          "description": "Creating a user",
+          "link": "users/creating_a_user.json",
+          "groups": "all",
+          "route": "/users",
+          "method": "post"
+        },
+        {
+          "description": "Deleting a user",
+          "link": "users/deleting_a_user.json",
+          "groups": "all",
+          "route": "/users/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Getting a list of users",
+          "link": "users/getting_a_list_of_users.json",
+          "groups": "all",
+          "route": "/users",
+          "method": "get"
+        },
+        {
+          "description": "Getting a specific user",
+          "link": "users/getting_a_specific_user.json",
+          "groups": "all",
+          "route": "/users/:id",
+          "method": "get"
+        },
+        {
+          "description": "Updating a user",
+          "link": "users/updating_a_user.json",
+          "groups": "all",
+          "route": "/users/:id",
+          "method": "put"
+        }
+      ]
+    }
+  ]
+}

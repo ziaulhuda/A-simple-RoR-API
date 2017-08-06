@@ -1,0 +1,50 @@
+{
+  "resource": "Posts",
+  "resource_explanation": "API to handel Post resource. Authorization required .",
+  "http_method": "PUT",
+  "route": "/posts/:id",
+  "description": "Updating a post",
+  "explanation": "Admin can update any post. \"user\" type users can only update their own posts. Guests cannot update any post.",
+  "parameters": [
+    {
+      "required": false,
+      "name": "title",
+      "description": "Title of the post"
+    },
+    {
+      "required": false,
+      "name": "body",
+      "description": "Contents of the post"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/posts/4",
+      "request_body": "{\"title\":\"A wonderful post\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "9pUCLS51DjFUye9VXvWDnDxB",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "4cd47da4-9ffd-47d6-a0f6-7d1cda246f77",
+        "X-Runtime": "0.005104"
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:3000/posts/4\" -d '{\"title\":\"A wonderful post\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: 9pUCLS51DjFUye9VXvWDnDxB\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "resource": "Comments",
+  "resource_explanation": "API to handel Comment resource. Authorization required .",
+  "http_method": "GET",
+  "route": "/posts/:post_id/comments/",
+  "description": "Getting a list of comments",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the comment"
+    },
+    {
+      "Type": "Text",
+      "name": "body",
+      "description": "Contents of the comment"
+    },
+    {
+      "Type": "Number",
+      "name": "post_id",
+      "description": "ID of the post this comment is related to"
+    },
+    {
+      "Type": "Number",
+      "name": "user_id",
+      "description": "ID of the creator"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/posts/1/comments/",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "NBqVVieNpcV4wHSgy5HdBo9F",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"body\": \"[\\\"Perspiciatis quod ab at optio sequi delectus. Sint voluptatum perspiciatis voluptatibus suscipit quo. Exercitationem quas molestiae beatae error incidunt iste.\\\", \\\"Voluptatibus qui et sunt sed dolorem quo. Modi sed veniam consequatur commodi molestiae excepturi. Quia deserunt blanditiis accusamus voluptas excepturi voluptates. Rerum enim harum molestiae iusto.\\\", \\\"Nisi reiciendis reprehenderit. Excepturi ut inventore mollitia. Atque amet ducimus. Autem architecto ea et laborum eos rerum. Cum ut commodi occaecati quod.\\\"]\",\n    \"post_id\": 1,\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.406Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.406Z\"\n  },\n  {\n    \"id\": 2,\n    \"body\": \"[\\\"Rerum voluptas sunt. Laudantium deleniti a et. Qui neque mollitia provident.\\\", \\\"Et excepturi illum omnis quia hic nisi. Cumque nihil et doloremque molestiae est est ipsa. Ad dolore ducimus possimus voluptatem.\\\", \\\"Quia quia quaerat ut fugiat magnam. Repudiandae accusamus ea eos architecto et sapiente possimus. Rerum facilis architecto fugit ut mollitia excepturi aut. Et ratione vitae iste dolore.\\\"]\",\n    \"post_id\": 1,\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.411Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.411Z\"\n  },\n  {\n    \"id\": 3,\n    \"body\": \"[\\\"Vel rerum laborum est culpa excepturi. Velit quaerat sed sit dolor. Est voluptatem quia adipisci. Quos voluptatibus minus labore aut voluptatem rem. Quidem ducimus ad odit magnam.\\\", \\\"Nostrum deleniti quia saepe illum eaque minus. Et ipsam odio at veniam. Rerum ab adipisci. Minima expedita molestiae adipisci inventore.\\\", \\\"Earum autem aut. Et fugit voluptatem. Reprehenderit eveniet libero omnis eius ullam eum velit. Dicta quaerat voluptate.\\\"]\",\n    \"post_id\": 1,\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.417Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.417Z\"\n  },\n  {\n    \"id\": 4,\n    \"body\": \"[\\\"Voluptatem voluptas aut iste. Maiores mollitia laudantium quis totam. Aut in eum placeat dolorem corporis molestiae doloribus.\\\", \\\"Nam fugit voluptatem et praesentium. Voluptas expedita molestiae impedit est at quasi. Voluptate non commodi ea voluptas. Voluptatem eius error sunt perspiciatis. Officia odit et aut doloremque.\\\", \\\"Enim incidunt perspiciatis at quia est fuga saepe. Libero ab impedit fugit architecto. Aliquam explicabo minus et blanditiis numquam. Consequatur voluptate suscipit culpa nisi possimus sit.\\\"]\",\n    \"post_id\": 1,\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.421Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.421Z\"\n  },\n  {\n    \"id\": 5,\n    \"body\": \"[\\\"Alias ut inventore molestiae placeat. Itaque aut enim. Blanditiis quaerat alias rerum. Error vero porro eos tempore explicabo sunt. Quis ut qui ducimus magnam exercitationem adipisci distinctio.\\\", \\\"Aut voluptatem culpa. Natus id perspiciatis vel. Facere illo et nesciunt velit qui rerum autem. Nostrum sunt sint nobis.\\\", \\\"Enim odit quia explicabo aut. Enim aut quis quos. Rerum pariatur earum. Nesciunt odit in nam excepturi nihil.\\\"]\",\n    \"post_id\": 1,\n    \"user_id\": 1,\n    \"created_at\": \"2017-08-06T00:09:13.426Z\",\n    \"updated_at\": \"2017-08-06T00:09:13.426Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"39931095df792d27af4b9db69ed666e1\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "60c58673-1ae5-4fd6-84c4-5e864c76b78a",
+        "X-Runtime": "0.030459",
+        "Content-Length": "2975"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/posts/1/comments/\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: NBqVVieNpcV4wHSgy5HdBo9F\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
