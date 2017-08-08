@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email], disabled: false)
     if user && user.authenticate(params[:password])
-      json_response({auth_token: user.auth_token, name: user.name, role: user.role}, :created )
+      json_response({id: user.id, auth_token: user.auth_token, name: user.name, role: user.role}, :created )
     else
       raise(ExceptionHandler::AuthenticationError, "Invalid credentials")
     end

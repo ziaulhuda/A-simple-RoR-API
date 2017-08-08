@@ -1,0 +1,35 @@
+<div ng-controller="postsController" ng-init="get()">
+<h3>Posts</h3>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>User ID</th>
+	<th></th>
+  </tr>
+  <tr ng-repeat="post in posts">
+    <td>
+      <button ng-show="services.isOwner(post.user_id)" class="w3-btn w3-ripple" ng-click="editPost($index)">&#9998;</button>
+    </td>
+    <td><a href="#!posts/{{post.id}}">{{ post.title }}</td>
+    <td>{{ post.user_id }}</td>
+    <td>
+      <button ng-show="services.isOwner(post.user_id)" class="w3-btn w3-ripple" ng-click="deletePost($index)">&#128465;</button>
+    </td>
+  </tr>
+</table>
+<br>
+<button ng-show="services.canCreate()" class="w3-btn w3-green w3-ripple" ng-click="editPost('new')">&#9998; Create New Post</button>
+
+<form name="postForm" ng-hide="hideform">
+  <h3 ng-hide="edit">Create New Post:</h3>
+  <h3 ng-show="edit">Edit Post:</h3>
+    <label>Title:</label>
+    <input class="w3-input w3-border" type="text" ng-model="title" name="title" required>
+  <br>
+    <textarea class="w3-input w3-border" rows="4" cols="50" ng-model="body" name="body" required></textarea>
+ <br>
+<button class="w3-btn w3-green w3-ripple" ng-click="submit(postForm)">&#10004; Save</button>
+</form>
+</div>

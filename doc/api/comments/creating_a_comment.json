@@ -38,11 +38,11 @@
     {
       "request_method": "POST",
       "request_path": "/posts/1/comments/",
-      "request_body": "{\"body\":\"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\"}",
+      "request_body": "{\"body\":\"Vel neque est autem. Excepturi consectetur ut necessitatibus iusto repellat distinctio amet. Voluptatibus pariatur non ut odit eveniet. Repellendus quod itaque. Animi nisi officiis doloremque. Temporibus consequuntur quam reprehenderit est. Odio sapiente facilis. Vero tempore ut facilis aut et itaque hic. Ut alias sapiente velit fugit. Et ut veritatis quibusdam et dolor. Ducimus impedit amet est dolores ut est quidem. Velit voluptate neque consectetur ipsum accusamus.\"}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "L8GmtKKZpzvDY86GyLvcQfwy",
+        "Authorization": "kkuQrKrAsj5u68fvC7zasiwp",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -51,17 +51,17 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 6,\n  \"body\": \"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-06T15:22:56.169Z\",\n  \"updated_at\": \"2017-08-06T15:22:56.169Z\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"body\": \"Vel neque est autem. Excepturi consectetur ut necessitatibus iusto repellat distinctio amet. Voluptatibus pariatur non ut odit eveniet. Repellendus quod itaque. Animi nisi officiis doloremque. Temporibus consequuntur quam reprehenderit est. Odio sapiente facilis. Vero tempore ut facilis aut et itaque hic. Ut alias sapiente velit fugit. Et ut veritatis quibusdam et dolor. Ducimus impedit amet est dolores ut est quidem. Velit voluptate neque consectetur ipsum accusamus.\",\n  \"post_id\": 1,\n  \"user_id\": 1,\n  \"created_at\": \"2017-08-08T10:32:00.319Z\",\n  \"updated_at\": \"2017-08-08T10:32:00.319Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e858537c2e2517512d6a6f4c945ef85a\"",
+        "ETag": "W/\"63cad302e0b2445d16d3ea6221fb7f38\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "aef9b5d6-1d1c-4685-bb9f-3822240d3111",
-        "X-Runtime": "0.005499",
-        "Content-Length": "490"
+        "X-Request-Id": "31cb8d22-dacb-4b2b-aab1-731f9a46e6f9",
+        "X-Runtime": "0.006261",
+        "Content-Length": "594"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/posts/1/comments/\" -d '{\"body\":\"Vitae minus labore mollitia. Tempora reiciendis odit totam quo. Expedita dolor ex ut unde non et a. Dolor et est occaecati sunt. Consequatur earum autem doloremque nam sed sunt. Dolores debitis commodi. Rem dolores fugit amet sed aut veniam et. Consequuntur consequatur sequi nisi dolores magnam sunt maxime. Et consequatur id. Optio mollitia molestiae minus quisquam.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: L8GmtKKZpzvDY86GyLvcQfwy\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/1/comments/\" -d '{\"body\":\"Vel neque est autem. Excepturi consectetur ut necessitatibus iusto repellat distinctio amet. Voluptatibus pariatur non ut odit eveniet. Repellendus quod itaque. Animi nisi officiis doloremque. Temporibus consequuntur quam reprehenderit est. Odio sapiente facilis. Vero tempore ut facilis aut et itaque hic. Ut alias sapiente velit fugit. Et ut veritatis quibusdam et dolor. Ducimus impedit amet est dolores ut est quidem. Velit voluptate neque consectetur ipsum accusamus.\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: kkuQrKrAsj5u68fvC7zasiwp\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

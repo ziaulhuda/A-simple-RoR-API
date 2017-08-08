@@ -1,0 +1,59 @@
+<div ng-controller="usersController" ng-init="get()">
+<h3>Users</h3>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Email</th>
+	<th ng-show="services.isAdmin()">Role</th>
+	<th ng-show="services.isAdmin()">Disabled</th>
+	<th></th>
+  </tr>
+  <tr ng-repeat="user in users">
+    <td>
+      <button ng-show="services.isOwner(user.id)" class="w3-btn w3-ripple" ng-click="editUser($index)">&#9998;</button>
+    </td>
+    <td><a href="#!users" ng-click="showUserDetails($index)">{{ user.name }}</a></td>
+    <td>{{ user.email }}</td>
+	<td ng-show="services.isAdmin()">{{ user.role }}</td>
+	<td ng-show="services.isAdmin()">{{ user.disabled ? "&#10004;" : ""}}</td>
+    <td>
+      <button ng-show="services.isOwner(user.id)" class="w3-btn w3-ripple" ng-click="deleteUser($index)">&#128465;</button>
+    </td>
+  </tr>
+</table>
+<br>
+<button ng-show="services.canCreate()" class="w3-btn w3-green w3-ripple" ng-click="editUser('new')">&#9998; Create New User</button>
+
+<form name="userForm" ng-hide="hideform">
+  <h3 ng-hide="edit">Create New User:</h3>
+  <h3 ng-show="edit">Edit User:</h3>
+    <label>Name:</label>
+    <input class="w3-input w3-border" type="text" ng-model="name" name="name" required>
+    <label>Email:</label>
+    <input class="w3-input w3-border" type="email" ng-model="email" name="email" required>
+    <label>Password:</label>
+    <input class="w3-input w3-border" type="password" ng-model="password" name="password" ng-required="!edit">
+    <label ng-show="services.isAdmin()">Role:</label>
+	<select ng-show="services.isAdmin()"  class="w3-input w3-border" ng-model="role" name="role" ng-options="x for x in roles">
+	</select>
+    <label ng-show="services.isAdmin()">Disabled:</label>
+    <input ng-show="services.isAdmin()" class="w3-input w3-border" type="checkbox" ng-model="disabled" name="disabled">
+ <br>
+<button class="w3-btn w3-green w3-ripple" ng-click="submit(userForm)">&#10004; Save</button>
+</form>
+
+<div ng-show="showUser">
+	<h1>{{selectedUser.name}}</h1>
+	<br>
+	Email: {{selectedUser.email}}
+	<br>
+	<div ng-show="services.isAdmin()">
+		Role: {{selectedUser.role}}
+		<br>
+		Disabled: {{selectedUser.disabled ? "&#10004;" : "No"}}
+	</div>
+	<button class="w3-btn w3-green w3-ripple" ng-click="toggleShowUser()">Close</button>
+</div>
+</div>

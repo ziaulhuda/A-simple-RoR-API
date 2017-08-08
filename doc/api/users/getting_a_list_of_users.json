@@ -43,7 +43,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "SscEZvh1eutJhohuRiAQY8Fu",
+        "Authorization": "FJAuEEMrgukzvveagg6t8daN",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -52,17 +52,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"[\\\"a\\\", \\\"qui\\\"]\",\n    \"email\": \"concepcion.kautzer@strosin.biz\",\n    \"role\": \"admin\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 2,\n    \"name\": \"[\\\"error\\\", \\\"illum\\\"]\",\n    \"email\": \"jordi_marks@connelly.com\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"[\\\"cumque\\\", \\\"harum\\\"]\",\n    \"email\": \"rahsaan.kilback@rippin.net\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 4,\n    \"name\": \"[\\\"fugiat\\\", \\\"omnis\\\"]\",\n    \"email\": \"green@rohan.co\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 5,\n    \"name\": \"[\\\"quod\\\", \\\"minima\\\"]\",\n    \"email\": \"shania@heathcote.biz\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"[\\\"nulla\\\", \\\"voluptatum\\\"]\",\n    \"email\": \"nicholas@rogahnmonahan.org\",\n    \"role\": \"admin\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 2,\n    \"name\": \"[\\\"recusandae\\\", \\\"non\\\"]\",\n    \"email\": \"roberto@buckridgebauch.co\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"[\\\"vero\\\", \\\"aspernatur\\\"]\",\n    \"email\": \"louvenia.stroman@kuhnbarrows.io\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 4,\n    \"name\": \"[\\\"voluptatem\\\", \\\"aut\\\"]\",\n    \"email\": \"elisa_beer@heidenreich.name\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  },\n  {\n    \"id\": 5,\n    \"name\": \"[\\\"ea\\\", \\\"inventore\\\"]\",\n    \"email\": \"cyril@price.org\",\n    \"role\": \"guest\",\n    \"disabled\": false\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9247b2d4a9cffd304fcb4df22d7837b8\"",
+        "ETag": "W/\"b197ca1a56a0ac9cbad2ebf1f23dbdb3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c2facc93-b4e3-4041-8612-eb922fa05b19",
-        "X-Runtime": "0.027162",
-        "Content-Length": "531"
+        "X-Request-Id": "0d8e58c8-7ef7-4e63-89f7-292c7e2c8601",
+        "X-Runtime": "0.023391",
+        "Content-Length": "561"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:3000/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: SscEZvh1eutJhohuRiAQY8Fu\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"http://localhost:3000/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: FJAuEEMrgukzvveagg6t8daN\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

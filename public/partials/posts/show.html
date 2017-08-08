@@ -1,0 +1,25 @@
+<div ng-controller="postsController" ng-init="show()">
+<h1>{{selectedPost.title}}</h3>
+<h2>By: {{selectedPost.user_id}}</h2>
+{{selectedPost.body}}
+</div>
+<div ng-controller="commentsController" ng-init="get()">
+	<h2>Comments:</h2>
+	<ul>
+		<li ng-repeat="comment in comments">
+			<button ng-show="services.isOwner(comment.user_id)" class="w3-btn w3-ripple" ng-click="editComment($index)">&#9998;</button>
+			<button ng-show="services.isOwner(comment.user_id)" class="w3-btn w3-ripple" ng-click="deleteComment($index)">&#128465;</button>
+			By: {{comment.user_id}} : {{comment.body}}
+		</li>
+	</ul>
+	<button ng-show="services.canCreate()" class="w3-btn w3-green w3-ripple" ng-click="editComment('new')">&#9998; Create New Comment</button>
+
+	<form name="commentForm" ng-hide="hideform">
+	  <h3 ng-hide="edit">Create New Comment:</h3>
+	  <h3 ng-show="edit">Edit Comment:</h3>
+	    
+	    <textarea class="w3-input w3-border" rows="4" cols="50" ng-model="body" name="body" required></textarea>
+	 <br>
+	<button class="w3-btn w3-green w3-ripple" ng-click="submit(commentForm)">&#10004; Save</button>
+	</form>
+</div>

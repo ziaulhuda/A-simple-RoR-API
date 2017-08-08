@@ -12,20 +12,21 @@ Request:
   Cookie: 
   Host: example.org
 
-  {"email":"celestino_von@leuschke.io","password":"12345678"}
+  {"email":"lemuel@krajcikmarks.name","password":"12345678"}
 
 Response:
   Status: 201 Created
   Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 89
+  Content-Length: 96
   Content-Type: application/json; charset=utf-8
-  ETag: W/"6343ab5093077ea3162e919d5b532b9f"
-  X-Request-Id: 104a1248-4b5b-4fdd-aa98-f61dff5264c4
-  X-Runtime: 0.287134
+  ETag: W/"4b90c71ee67ca0cb589a62b9aa535b4e"
+  X-Request-Id: f0797e85-fd6d-4821-9f90-df2057e1f1d7
+  X-Runtime: 0.184191
 
   {
-    "auth_token": "jbp7brvc7Erq3jihbzuxQLDu",
-    "name": "[\"similique\", \"et\"]",
+    "id": 1,
+    "auth_token": "wjXRqeCUZy69f9KW7ifivuKu",
+    "name": "[\"dolor\", \"itaque\"]",
     "role": "admin"
   }
 
@@ -36,7 +37,7 @@ Signing out
 Request:
   DELETE /signout/1
   Accept: application/json
-  Authorization: wYhZZYZMn7sRMd9gcZQyhLJ9
+  Authorization: twkQdv7ikrhWfJqBMRND49x3
   Content-Type: application/json
   Cookie: 
   Host: example.org
@@ -44,7 +45,7 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Request-Id: 75da57c8-0cd5-4e87-ab4c-30bf622b0c24
-  X-Runtime: 0.007044
+  X-Request-Id: cc563c9b-b5fc-46be-afca-a66718024334
+  X-Runtime: 0.008599
 
 

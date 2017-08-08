@@ -1,0 +1,8 @@
+
+<form name="signinForm" ng-hide="auth_token" ng-controller="authorizeController" ng-submit="">
+	<table class="w3-table w3-bordered w3-striped">
+	  	<tr><td>Email:</td><td><input type="email" name="email" ng-model="email" required></td></tr>
+		<tr><td>Password:</td><td><input type="password" name="password" ng-model="password" required></td></tr>
+	</table>
+	<button class="w3-btn w3-green w3-ripple" ng-click="submit(signinForm)">Submit</button>
+</form>

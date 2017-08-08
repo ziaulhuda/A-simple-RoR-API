@@ -14,6 +14,7 @@ resource "Authorization" do
         parameter :password, "Password of the user"
       end
       
+      response_field :id, "ID of the user", "Type" => "Number"
       response_field :auth_token, "Authorization token to be sent in request headers for using other API actions", "Type" => "String"
       response_field :name, "Name of the user", "Type" => "String"
       response_field :role, "Role of the user. One of [admin, user, guest]", "Type" => "String"

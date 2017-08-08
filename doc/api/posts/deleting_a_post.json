@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "mrmQgkNoNVLZyMGwx1H2wFP2",
+        "Authorization": "WC5tEi4MVNWjoSx6yFkQsUH5",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -31,11 +31,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "6270aeb7-151c-4d3d-a8e6-4ee95594de0a",
-        "X-Runtime": "0.009247"
+        "X-Request-Id": "56913d7c-7977-4032-aff0-9ba311db15db",
+        "X-Runtime": "0.004766"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/posts/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: mrmQgkNoNVLZyMGwx1H2wFP2\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/4\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: WC5tEi4MVNWjoSx6yFkQsUH5\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

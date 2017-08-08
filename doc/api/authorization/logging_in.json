@@ -19,6 +19,11 @@
   ],
   "response_fields": [
     {
+      "Type": "Number",
+      "name": "id",
+      "description": "ID of the user"
+    },
+    {
       "Type": "String",
       "name": "auth_token",
       "description": "Authorization token to be sent in request headers for using other API actions"
@@ -38,7 +43,7 @@
     {
       "request_method": "POST",
       "request_path": "/signin",
-      "request_body": "{\"email\":\"celestino_von@leuschke.io\",\"password\":\"12345678\"}",
+      "request_body": "{\"email\":\"lemuel@krajcikmarks.name\",\"password\":\"12345678\"}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
@@ -50,17 +55,17 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"auth_token\": \"jbp7brvc7Erq3jihbzuxQLDu\",\n  \"name\": \"[\\\"similique\\\", \\\"et\\\"]\",\n  \"role\": \"admin\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"auth_token\": \"wjXRqeCUZy69f9KW7ifivuKu\",\n  \"name\": \"[\\\"dolor\\\", \\\"itaque\\\"]\",\n  \"role\": \"admin\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6343ab5093077ea3162e919d5b532b9f\"",
+        "ETag": "W/\"4b90c71ee67ca0cb589a62b9aa535b4e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "104a1248-4b5b-4fdd-aa98-f61dff5264c4",
-        "X-Runtime": "0.287134",
-        "Content-Length": "89"
+        "X-Request-Id": "f0797e85-fd6d-4821-9f90-df2057e1f1d7",
+        "X-Runtime": "0.184191",
+        "Content-Length": "96"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/signin\" -d '{\"email\":\"celestino_von@leuschke.io\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/signin\" -d '{\"email\":\"lemuel@krajcikmarks.name\",\"password\":\"12345678\"}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

@@ -43,7 +43,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "JQuWMKmeSjYFyDLJXJvABTkU",
+        "Authorization": "sHJDr1b1zG8WL5RVaCWkeVP9",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -55,11 +55,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "586848dd-f94b-4a1f-bdcb-fdebccd4fd04",
-        "X-Runtime": "0.013043"
+        "X-Request-Id": "588e51ae-33e9-47de-b313-32fd302469a9",
+        "X-Runtime": "0.005286"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/users/1\" -d '{\"name\":\"Greate King\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: JQuWMKmeSjYFyDLJXJvABTkU\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/users/1\" -d '{\"name\":\"Greate King\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: sHJDr1b1zG8WL5RVaCWkeVP9\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

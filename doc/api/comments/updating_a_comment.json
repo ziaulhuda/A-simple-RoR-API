@@ -23,7 +23,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "by1TFMzWrUGS5Bpm6JfQSc6d",
+        "Authorization": "CuAsmuPjjDg31MYxf2Vc22qA",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -35,11 +35,11 @@
       "response_body": null,
       "response_headers": {
         "Cache-Control": "no-cache",
-        "X-Request-Id": "1db6c3bf-5d3b-473a-8806-a92b2cc8b452",
-        "X-Runtime": "0.011456"
+        "X-Request-Id": "337a599f-04de-4d01-aece-4718504d750c",
+        "X-Runtime": "0.012932"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/posts/1/comments/4\" -d '{\"body\":\"A wonderful post\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: by1TFMzWrUGS5Bpm6JfQSc6d\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/posts/1/comments/4\" -d '{\"body\":\"A wonderful post\"}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: CuAsmuPjjDg31MYxf2Vc22qA\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

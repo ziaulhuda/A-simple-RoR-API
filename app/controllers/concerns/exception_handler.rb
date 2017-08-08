@@ -13,6 +13,7 @@ module ExceptionHandler
     rescue_from ActiveRecord::RecordInvalid, with: :four_twenty_two
     rescue_from ExceptionHandler::MissingToken, with: :four_twenty_two
     rescue_from ExceptionHandler::InvalidToken, with: :four_twenty_two
+    rescue_from ActiveRecord::StatementInvalid, with: :four_hundred
     
     rescue_from ExceptionHandler::Forbidden do|e|
       json_response( {error: "Action forbidden"}, :forbidden)
@@ -27,6 +28,10 @@ module ExceptionHandler
     end
     
     private
+    
+    def four_hundred(e)
+      json_response({ error: "Invalid parameters" }, 400)
+    end
     
     def four_twenty_two(e)
       json_response({ error: e.message }, :unprocessable_entity)

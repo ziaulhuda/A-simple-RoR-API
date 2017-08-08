@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>A Simple API</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body ng-app="aSimpleAPI">
+	<div  class="w3-container">
+		<div ng-include="'/partials/top_banner.html'"></div>
+
+		<div ng-view></div>
+	</div>
+	<script src="/js/aSimpleAPI.js"></script>
+	<script src="/js/services.js"></script>
+	<script src="/js/authorizeController.js"></script>
+	<script src="/js/usersController.js"></script>
+	<script src="/js/postsController.js"></script>
+	<script src="/js/commentsController.js"></script>
+</body>
+</html>
